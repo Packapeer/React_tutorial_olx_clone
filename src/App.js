@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 import './App.css';
 
@@ -7,11 +8,14 @@ import './App.css';
  */
 import Home from './Pages/Home';
 
-
 function App() {
   return (
     <div>
-      <Home />
+      <Router>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Router>
     </div>
   );
 }
