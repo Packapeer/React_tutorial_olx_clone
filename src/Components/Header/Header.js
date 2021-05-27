@@ -11,9 +11,7 @@ function Header() {
     <div className="headerParentDiv">
       <div className="headerChildDiv">
         <div className="brandName">
-          <Link to="/">
-            <OlxLogo></OlxLogo>
-          </Link>
+          <OlxLogo></OlxLogo>
         </div>
         <div className="placeSearch">
           <Search></Search>
