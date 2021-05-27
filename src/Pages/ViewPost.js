@@ -6,7 +6,7 @@ import View from '../Components/View/View'
 function ViewPost(props) {
     return (
         <div>
-            <Header user={props.user?.displayName} />
+            <Header />
             <View/>
         </div>
     )

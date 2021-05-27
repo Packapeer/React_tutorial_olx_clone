@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
 import './Header.css';
 import OlxLogo from '../../assets/OlxLogo';
@@ -37,20 +36,17 @@ function Header() {
           <Arrow></Arrow>
         </div>
         <div className="loginPage">
-          <Link to="/login">
-            <span>Login</span>
-            <hr />
-          </Link>
+          <span>Login</span>
+          <hr />
         </div>
-        <Link to="/create">
-          <div className="sellMenu">
-            <SellButton></SellButton>
-            <div className="sellMenuContent">
-              <SellButtonPlus></SellButtonPlus>
-              <span>SELL</span>
-            </div>
+
+        <div className="sellMenu">
+          <SellButton></SellButton>
+          <div className="sellMenuContent">
+            <SellButtonPlus></SellButtonPlus>
+            <span>SELL</span>
           </div>
-        </Link>
+        </div>
       </div>
     </div>
   );

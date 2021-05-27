@@ -10,7 +10,7 @@ import Footer from '../Components/Footer/Footer';
 function Home(props) {
   return (
     <div className="homeParentDiv">
-      <Header user={props.user} />
+      <Header />
       <Banner />
       <Posts />
       <Footer />

@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
 import Logo from '../../olx-logo.png';
 import './Signup.css';
@@ -53,9 +52,7 @@ export default function Signup() {
           <br />
           <button>Signup</button>
         </form>
-        <Link to="/login">
-          <a>Login</a>
-        </Link>
+        <a>Login</a>
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
 import Logo from '../../olx-logo.png';
 import './Login.css';
@@ -33,9 +32,7 @@ function Login() {
           <br />
           <button>Login</button>
         </form>
-        <Link to="/signup">
-          <a>Signup</a>
-        </Link>
+        <a>Signup</a>
       </div>
     </div>
   );
