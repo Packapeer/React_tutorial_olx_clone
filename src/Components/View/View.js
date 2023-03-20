@@ -4,7 +4,7 @@ import { PostContext } from '../../store/PostContext';
 
 import './View.css';
 function View() {
-  const [userDetails,setUserDetails]= useState(null)
+  const [userDetails,setUserDetails]= useState()
   const {postDetails} = useContext(PostContext)
   const [posts,setposts]= useState(postDetails)
   const {firebase} = useContext(FirebaseContext)
@@ -18,7 +18,7 @@ function View() {
     })
 
 
-  })
+  },[])
 
   return (
    
@@ -26,7 +26,7 @@ function View() {
       <div className="imageShowDiv">
         <img
           src={posts?.url}
-          alt="product image"
+          alt="product_image"
         />
       </div>
       <div className="rightSection">
